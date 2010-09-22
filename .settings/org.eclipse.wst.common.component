@@ -3,6 +3,7 @@
     <wb-module deploy-name="StrutsLoginHelloWorld2">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
         <property name="context-root" value="StrutsLoginHelloWorld2"/>
         <property name="java-output-path" value="/StrutsLoginHelloWorld2/build/classes"/>
     </wb-module>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+	
+	<!-- specifies the ApplicationResources.properties file -->
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+
+	<package name="default" extends="struts-default" namespace="/">
+		<!-- Use the Login action class -->
+		<!-- use default method for action classes - execute() -->
+		<action name="login" class="com.coolisland.struts.actions.Login">
+			<!-- if the authentication fails, display the Login.jsp again, if it succeeds, go to the Welcome.jsp -->
+			<result name="success">Welcome.jsp</result>
+			<result name="error">Login.jsp</result>
+		</action>
+	</package>
+</struts>

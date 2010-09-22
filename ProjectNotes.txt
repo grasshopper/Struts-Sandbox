@@ -1,0 +1,90 @@
+NOTES FROM STARTING UP TOMCAT OUTSIDE OF ECLIPSE WITH THE HELLOWORLD STRUTS APP
+
+copy the following Struts jars to the C:\Devtools\Apache Software Foundation\Tomcat 7.0\webapps\StrutsHelloWorld\WEB-INF\lib 
+folder (OR within eclipse WEB-INF –> lib):
+	Commons-logging-1.0.4.jar
+	commons-fileupload-1.2.1.jar
+	commons-io-1.3.2.jar	
+	freemarker-2.3.16.jar
+	javassist-3.7.ga.jar
+	ognl-3.0.jar
+	struts2-core-2.2.1.jar
+	xwork-core-2.2.1.jar
+
+GET THE FOLLOWING OUTPUT:
+
+
+
+Sep 22, 2010 1:28:10 PM org.apache.catalina.core.AprLifecycleListener init
+
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production envi
+ronments was not found on the java.library.path: C:\Devtools\Apache Software Foundation\Tomcat 7.0\b
+in;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\DevTools\Python27\Lib\site-packages\P
+yQt4\bin;C:\Program Files\Java\jdk1.6.0_18\bin;C:\Program Files\Common Files\Microsoft Shared\Window
+s Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files (x86)\CyberLink\Powe
+r2Go;C:\Oracle10.2;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\A
+dobe\AGL;C:\Program Files (x86)\QuickTime\QTSystem\;C:\DevTools\Git\cmd;C:\DevTools\git-cola\bin;C:\
+Devtools;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\Java\jdk1.6.0_
+18;C:\devtools\Sun\SDK\bin;C:\Apps\Notepad++;C:\Apps\cygwin\bin;C:\Program Files (x86)\Common Files\
+Microsoft Shared\Windows Live;C:\Apps\cygwin/home/Silvio;C:\Devtools\apache-maven-2.2.1/bin;C:\Devto
+ols\Apache Software Foundation\Tomcat 7.0/bin
+Sep 22, 2010 1:28:11 PM org.apache.coyote.http11.Http11Protocol init
+
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Sep 22, 2010 1:28:11 PM org.apache.coyote.ajp.AjpProtocol init
+
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Sep 22, 2010 1:28:11 PM org.apache.catalina.startup.Catalina load
+
+INFO: Initialization processed in 687 ms
+Sep 22, 2010 1:28:11 PM org.apache.catalina.core.StandardService startInternal
+
+INFO: Starting service Catalina
+Sep 22, 2010 1:28:11 PM org.apache.catalina.core.StandardEngine startInternal
+
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.2
+Sep 22, 2010 1:28:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+
+INFO: Deploying web application directory docs
+Sep 22, 2010 1:28:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+
+INFO: Deploying web application directory examples
+Sep 22, 2010 1:28:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+
+INFO: Deploying web application directory host-manager
+Sep 22, 2010 1:28:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+
+INFO: Deploying web application directory manager
+Sep 22, 2010 1:28:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+
+INFO: Deploying web application directory ROOT
+Sep 22, 2010 1:28:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+
+INFO: Deploying web application directory StrutsHelloWorld
+Sep 22, 2010 1:28:12 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+
+INFO: Parsing configuration file [struts-default.xml]
+Sep 22, 2010 1:28:12 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+
+INFO: Unable to locate configuration files of the name struts-plugin.xml, skipping
+Sep 22, 2010 1:28:12 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+
+INFO: Parsing configuration file [struts-plugin.xml]
+Sep 22, 2010 1:28:12 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+
+INFO: Unable to locate configuration files of the name struts.xml, skipping
+Sep 22, 2010 1:28:12 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+
+INFO: Parsing configuration file [struts.xml]
+Sep 22, 2010 1:28:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+
+INFO: Deploying web application directory TomcatTest-App
+Sep 22, 2010 1:28:12 PM org.apache.coyote.http11.Http11Protocol start
+
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Sep 22, 2010 1:28:12 PM org.apache.coyote.ajp.AjpProtocol start
+
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Sep 22, 2010 1:28:12 PM org.apache.catalina.startup.Catalina start
+
+INFO: Server startup in 1503 ms
